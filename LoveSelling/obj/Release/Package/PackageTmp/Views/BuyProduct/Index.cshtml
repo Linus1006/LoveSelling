@@ -1,0 +1,124 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@DateTime.Now.Year 玉山愛心義賣</title>
+    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon" />
+    <link rel="Bookmark" href="~/img/favicon.ico" type="image/x-icon" />
+    <link href="~/Content/style.css" rel="stylesheet">
+</head>
+<body ontouchmove="event.preventDefault()" class="">
+
+    <p style="padding-right:4%; text-align:right;">&copy; @DateTime.Now.Year - 資訊處 應用發展部贊助開發</p>
+    <input type="text" class="entry" id="productId">
+
+    <section class="coins">
+        <a href=@Url.Action("Logout", "Account")>
+            <img src="" class="figure" id="figure1">
+        </a>
+    </section>
+
+    <div id="bubblePlace"></div>
+
+    <div id="hearts">
+        <div class="heart-container">
+            <div class="heart">
+                &hearts;
+            </div>
+        </div>
+    </div>
+    @*@Url.Action("Logout", "Account")*@
+    @*<embed src="~/img/music.mp3" autostart=true loop=true hidden="true">*@
+    <audio id="audio" src="~/img/yeah.mp3"></audio>
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script type="text/javascript" src="~/Scripts/action.js"></script>
+    <script>
+        $(function () { //埋事件
+            var max = 2;
+            var min = 0;
+            $("#figure1").attr('src', '../img/bear' + Math.floor(Math.random() * (max - min + 1)) + '.png');
+            $("body").attr('class', 'bg' + Math.floor(Math.random() * (max - min + 1)));
+            $("input[type='text']:first", document.forms[0]).focus();
+            //監聽輸入
+            $('#productId').keypress(function () {
+
+                //code = (e.keyCode ? e.keyCode : e.which);
+                //if (code == 13 || code == 32) {
+                //    //放空
+                //}
+                //else {
+
+                    var id = $(this).val();
+
+                    if (id.length == 6) {
+                        //setTimeout(Buy(id), 1000);
+                        Buy(id);
+                    }
+                //}
+            });
+
+        });
+
+        function newHeart() {
+            var hearts = $('.heart');
+            if (hearts.length >= 24) return setTimeout(newHeart, 1000);
+            var c = $('.heart-container:first').clone();
+            var anims = ['heartSwing', 'heartSpin'];
+            var a = anims[Math.round(Math.random())];
+            c.find('.heart')
+                .css('opacity', 0.2 + Math.random() * 0.8)
+                .css('-webkit-animation-name', a)
+                .css('-moz-animation-name', a);
+            c.css('left', (10 + Math.random() * ($('body').innerWidth() - 10)) + 'px');
+            c.css('-webkit-animation-name', 'fall');
+            c.css('-webkit-animation-duration', (4 + Math.random() * 14) + 's');
+            c.css('-webkit-transform', 'scale(' + (0.4 + Math.random() * 2) + ')');
+            c.css('-moz-animation-duration', (4 + Math.random() * 14) + 's');
+            c.css('-moz-transform', 'scale(' + (0.4 + Math.random() * 2) + ')');
+            $('#hearts').append(c);
+            c.bind('animationend', function () {
+                c.remove();
+            });
+            c.bind('webkitAnimationEnd', function () {
+                c.remove();
+            });
+            setTimeout(newHeart, 200);
+        }
+        setTimeout(newHeart, 200);  //循環動畫
+
+        //新增的script
+        function Buy(id) {
+
+            $("#figure1").hide();   //隱藏熊
+            $("#productId").hide(); //隱藏輸入框
+            $('#bubblePlace').load('@Url.Action("Transaction")', { id: id }, function () {
+
+                //完成以後的事情
+                $(".bubble").fadeIn().addClass('animated').addClass('zoomIn');
+                $(".rain").addClass('blur');
+                $(".coins").addClass('blur');
+
+            }); //呼叫部分頁面
+
+            setTimeout(enterEvent, 3 * 1000);
+
+        };
+
+        function enterEvent() {
+            $('*').keypress(function (e) { //處理Enter
+                code = (e.keyCode ? e.keyCode : e.which);
+                if (code == 13) {
+                    window.location.reload();
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+﻿@using LoveSelling.Models;
+@model Product
+
+<script>
+    $('form').validate();
+</script>
+
+<div id="abc"></div>
+<div id="saveProductModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">產品細項 @ViewBag.Action</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="text-danger">
+                    @ViewBag.ProductMessage
+                </div>
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div id="saveProduct">
+
+                    @if (ViewBag.Action != "UpdateProduct")
+                    {
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.ID, new { @class = "required-mark" })
+                            <div>
+                                @Html.TextBoxFor(model => model.ID, new { @class = "form-control", data_rule_required = "true" })
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.ID, new { @class = "required-mark" })
+                            <div>
+                                @Html.TextBoxFor(model => model.ID, new { @class = "form-control", @readonly = "value", data_rule_required = "true" })
+                            </div>
+                        </div>
+                    }
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Unit, new { @class = "required-mark" })
+                        <div>
+                            @*@Html.TextBoxFor(model => model.Unit, new { @class = "form-control", data_rule_required = "true" })*@
+                            @Html.DropDownListFor(model => model.Unit, (IEnumerable<SelectListItem>)ViewBag.UnitItems, new { @class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Type, new { @class = "required-mark" , data_rule_required = "true" })
+                        <div>
+                            @Html.RadioButtonFor(model => model.Type, ProductType.Fine, new { @checked = "true" })
+                            @Html.Label("精品")
+                            @Html.RadioButtonFor(model => model.Type, ProductType.Toy)
+                            @Html.Label("玩具")
+                            @Html.RadioButtonFor(model => model.Type, ProductType.Electronic)
+                            @Html.Label("3C家電")
+                            @Html.RadioButtonFor(model => model.Type, ProductType.Book)
+                            @Html.Label("書籍及視聽")
+                            @Html.RadioButtonFor(model => model.Type, ProductType.Life)
+                            @Html.Label("居家生活")
+                            @Html.RadioButtonFor(model => model.Type, ProductType.Bid)
+                            @Html.Label("競標")
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Item, new { @class = "required-mark" })
+                        <div>
+                            @Html.TextBoxFor(model => model.Item, new { @class = "form-control", data_rule_required = "true" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Staff, new { @class = "required-mark" })
+                        <div>
+                            @Html.TextBoxFor(model => model.Staff, new { @class = "form-control", data_rule_required = "true" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Amount, new { @class = "required-mark" })
+                        <div>
+                            @Html.TextBoxFor(model => model.Amount, new { @class = "form-control", data_rule_digits = "true" })
+                        </div>
+                    </div>
+                    @if (ViewBag.Action == "UpdateProduct")
+                    {
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.isSell, new { @class = "required-mark" })
+                            <div>
+                                @Html.RadioButtonFor(model => model.isSell, false)
+                                @Html.Label("未賣出")
+                                @Html.RadioButtonFor(model => model.isSell, true)
+                                @Html.Label("已賣出")
+                            </div>
+                        </div>
+                    }
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+@*</form>*@

@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://github.com/dotnet/roslyn/blob/master/docs/compilers/Rule%20Set%20Format.md -->
+<RuleSet Name="Rules" Description="Code analysis rules." ToolsVersion="14.0">
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+    <!-- Missing XML comment for publicly visible type or member -->
+    <Rule Id="CS1591" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">  
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SpecialRules.md -->
+    <!-- XmlCommentAnalysisDisabled -->
+    <Rule Id="SA0001" Action="None" />
+    <!-- InvalidSettingsFile -->
+    <Rule Id="SA0002" Action="None" />
+
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SpacingRules.md -->
+    <!-- *1 KeywordsMustBeSpacedCorrectly -->
+    <Rule Id="SA1000" Action="Warning" />
+    <!-- *1 CommasMustBeSpacedCorrectly -->
+    <Rule Id="SA1001" Action="Warning" />
+    <!-- SemicolonsMustBeSpacedCorrectly -->
+    <Rule Id="SA1002" Action="None" />
+    <!-- *1 SymbolsMustBeSpacedCorrectly -->
+    <Rule Id="SA1003" Action="Warning" />
+    <!-- DocumentationLinesMustBeginWithSingleSpace -->
+    <Rule Id="SA1004" Action="None" />
+    <!-- SingleLineCommentsMustBeginWithSingleSpace -->
+    <Rule Id="SA1005" Action="None" />
+    <!-- PreprocessorKeywordsMustNotBePrecededBySpace -->
+    <Rule Id="SA1006" Action="None" />
+    <!-- OperatorKeywordMustBeFollowedBySpace -->
+    <Rule Id="SA1007" Action="None" />
+    <!-- *1 OpeningParenthesisMustBeSpacedCorrectly -->
+    <Rule Id="SA1008" Action="Warning" />
+    <!-- *1 ClosingParenthesisMustBeSpacedCorrectly -->
+    <Rule Id="SA1009" Action="Warning" />
+    <!-- OpeningSquareBracketsMustBeSpacedCorrectly -->
+    <Rule Id="SA1010" Action="None" />
+    <!-- ClosingSquareBracketsMustBeSpacedCorrectly -->
+    <Rule Id="SA1011" Action="None" />
+    <!-- OpeningBracesMustBeSpacedCorrectly -->
+    <Rule Id="SA1012" Action="None" />
+    <!-- ClosingBracesMustBeSpacedCorrectly -->
+    <Rule Id="SA1013" Action="None" />
+    <!-- OpeningGenericBracketsMustBeSpacedCorrectly -->
+    <Rule Id="SA1014" Action="None" />
+    <!-- ClosingGenericBracketsMustBeSpacedCorrectly -->
+    <Rule Id="SA1015" Action="None" />
+    <!-- OpeningAttributeBracketsMustBeSpacedCorrectly -->
+    <Rule Id="SA1016" Action="None" />
+    <!-- ClosingAttributeBracketsMustBeSpacedCorrectly -->
+    <Rule Id="SA1017" Action="None" />
+    <!-- NullableTypeSymbolsMustNotBePrecededBySpace -->
+    <Rule Id="SA1018" Action="None" />
+    <!-- MemberAccessSymbolsMustBeSpacedCorrectly -->
+    <Rule Id="SA1019" Action="None" />
+    <!-- IncrementDecrementSymbolsMustBeSpacedCorrectly -->
+    <Rule Id="SA1020" Action="None" />
+    <!-- NegativeSignsMustBeSpacedCorrectly -->
+    <Rule Id="SA1021" Action="None" />
+    <!-- PositiveSignsMustBeSpacedCorrectly -->
+    <Rule Id="SA1022" Action="None" />
+    <!-- DereferenceAndAccessOfMustBeSpacedCorrectly -->
+    <Rule Id="SA1023" Action="None" />
+    <!-- ColonsMustBeSpacedCorrectly -->
+    <Rule Id="SA1024" Action="None" />
+    <!-- CodeMustNotContainMultipleWhitespaceInARow -->
+    <Rule Id="SA1025" Action="None" />
+    <!-- CodeMustNotContainSpaceAfterNewKeywordInImplicitlyTypedArrayAllocation -->
+    <Rule Id="SA1026" Action="None" />
+    <!-- *1 UseTabsCorrectly -->
+    <Rule Id="SA1027" Action="Warning" />
+    <!-- CodeMustNotContainTrailingWhitespace -->
+    <Rule Id="SA1028" Action="None" />
+
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/ReadabilityRules.md -->
+    <!-- DoNotPrefixCallsWithBaseUnlessLocalImplementationExists -->
+    <Rule Id="SA1100" Action="None" />
+    <!-- PrefixLocalCallsWithThis -->
+    <Rule Id="SA1101" Action="None" />
+    <!-- QueryClauses should follow previous clause -->
+    <Rule Id="SA1102" Action="None" />
+    <!-- QueryClauses should be on separate lines or all on one line -->
+    <Rule Id="SA1103" Action="None" />
+    <!-- QueryClauses should begin on new line when previous clause spans multiple lines -->
+    <Rule Id="SA1104" Action="None" />
+    <!-- QueryClauses spanning multiple lines should begin on own line -->
+    <Rule Id="SA1105" Action="None" />
+    <!-- CodeMustNotContainEmptyStatements -->
+    <Rule Id="SA1106" Action="None" />
+    <!-- CodeMustNotContainMultipleStatementsOnOneLine -->
+    <Rule Id="SA1107" Action="None" />
+    <!-- BlockStatementsMustNotContainEmbeddedComments -->
+    <Rule Id="SA1108" Action="None" />
+    <!-- BlockStatementsMustNotContainEmbeddedRegions -->
+    <Rule Id="SA1109" Action="None" />
+    <!-- OpeningParenthesisMustBeOnDeclarationLine -->
+    <Rule Id="SA1110" Action="None" />
+    <!-- ClosingParenthesisMustBeOnLineOfLastParameter -->
+    <Rule Id="SA1111" Action="None" />
+    <!-- ClosingParenthesisMustBeOnLineOfOpeningParenthesis -->
+    <Rule Id="SA1112" Action="None" />
+    <!-- CommaMustBeOnSameLineAsPreviousParameter -->
+    <Rule Id="SA1113" Action="None" />
+    <!-- ParameterListMustFollowDeclaration -->
+    <Rule Id="SA1114" Action="None" />
+    <!-- ParameterMustFollowComma -->
+    <Rule Id="SA1115" Action="None" />
+    <!-- SplitParametersMustStartOnLineAfterDeclaration -->
+    <Rule Id="SA1116" Action="None" />
+    <!-- ParametersMustBeOnSameLineOrSeparateLines -->
+    <Rule Id="SA1117" Action="None" />
+    <!-- ParameterMustNotSpanMultipleLines -->
+    <Rule Id="SA1118" Action="None" />
+    <!-- CommentsMustContainText -->
+    <Rule Id="SA1120" Action="None" />
+    <!-- UseBuiltInTypeAlias -->
+    <Rule Id="SA1121" Action="None" />
+    <!-- UseStringEmptyForEmptyStrings -->
+    <Rule Id="SA1122" Action="None" />
+    <!-- DoNotPlaceRegionsWithinElements -->
+    <Rule Id="SA1123" Action="None" />
+    <!-- DoNotUseRegions -->
+    <Rule Id="SA1124" Action="None" />
+    <!-- UseShorthandForNullableTypes -->
+    <Rule Id="SA1125" Action="None" />
+    <!-- PrefixCallsCorrectly -->
+    <Rule Id="SA1126" Action="None" />
+    <!-- GenericTypeConstraintsMustBeOnOwnLine -->
+    <Rule Id="SA1127" Action="None" />
+    <!-- ConstructorInitializerMustBeOnOwnLine -->
+    <Rule Id="SA1128" Action="None" />
+    <!-- DoNotUseDefaultValueTypeConstructor -->
+    <Rule Id="SA1129" Action="None" />
+    <!-- UseLambdaSyntax -->
+    <Rule Id="SA1130" Action="None" />
+    <!-- UseReadableConditions -->
+    <Rule Id="SA1131" Action="None" />
+    <!-- DoNotCombineFields -->
+    <Rule Id="SA1132" Action="None" />
+    <!-- DoNotCombineAttributes -->
+    <Rule Id="SA1133" Action="None" />
+    <!-- AttributesMustNotShareLine -->
+    <Rule Id="SA1134" Action="None" />
+    <!-- EnumValuesShouldBeOnSeparateLines -->
+    <Rule Id="SA1136" Action="None" />
+    <!-- ElementsShouldHaveTheSameIndentation -->
+    <Rule Id="SA1137" Action="None" />
+    <!-- UseLiteralsSuffixNotationInsteadOfCasting -->
+    <Rule Id="SA1139" Action="None" />
+
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/OrderingRules.md -->
+    <!-- UsingDirectivesMustBePlacedCorrectly -->
+    <Rule Id="SA1200" Action="None" />
+    <!-- ElementsMustAppearInTheCorrectOrder -->
+    <Rule Id="SA1201" Action="None" />
+    <!-- ElementsMustBeOrderedByAccess -->
+    <Rule Id="SA1202" Action="None" />
+    <!-- ConstantsMustAppearBeforeFields -->
+    <Rule Id="SA1203" Action="None" />
+    <!-- StaticElementsMustAppearBeforeInstanceElements -->
+    <Rule Id="SA1204" Action="None" />
+    <!-- PartialElementsMustDeclareAccess -->
+    <Rule Id="SA1205" Action="None" />
+    <!-- DeclarationKeywordsMustFollowOrder -->
+    <Rule Id="SA1206" Action="None" />
+    <!-- ProtectedMustComeBeforeInternal -->
+    <Rule Id="SA1207" Action="None" />
+    <!-- SystemUsingDirectivesMustBePlacedBeforeOtherUsingDirectives -->
+    <Rule Id="SA1208" Action="None" />
+    <!-- UsingAliasDirectivesMustBePlacedAfterOtherUsingDirectives -->
+    <Rule Id="SA1209" Action="None" />
+    <!-- UsingDirectivesMustBeOrderedAlphabeticallyByNamespace -->
+    <Rule Id="SA1210" Action="None" />
+    <!-- UsingAliasDirectivesMustBeOrderedAlphabeticallyByAliasName -->
+    <Rule Id="SA1211" Action="None" />
+    <!-- PropertyAccessorsMustFollowOrder -->
+    <Rule Id="SA1212" Action="None" />
+    <!-- EventAccessorsMustFollowOrder -->
+    <Rule Id="SA1213" Action="None" />
+    <!-- ReadonlyElementsMustAppearBeforeNonReadonlyElements -->
+    <Rule Id="SA1214" Action="None" />
+    <!-- InstanceReadonlyElementsMustAppearBeforeInstanceNonReadonlyElements -->
+    <Rule Id="SA1215" Action="None" />
+    <!-- UsingStaticDirectivesMustBePlacedAtTheCorrectLocation -->
+    <Rule Id="SA1216" Action="None" />
+    <!-- UsingStaticDirectivesMustBeOrderedAlphabetically -->
+    <Rule Id="SA1217" Action="None" />
+
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/NamingRules.md -->
+    <!-- *1 ElementMustBeginWithUpperCaseLetter -->
+    <Rule Id="SA1300" Action="Warning" />
+    <!-- ElementMustBeginWithLowerCaseLetter -->
+    <Rule Id="SA1301" Action="None" />
+    <!-- *1 InterfaceNamesMustBeginWithI -->
+    <Rule Id="SA1302" Action="Warning" />
+    <!-- ConstFieldNamesMustBeginWithUpperCaseLetter -->
+    <Rule Id="SA1303" Action="None" />
+    <!-- NonPrivateReadonlyFieldsMustBeginWithUpperCaseLetter -->
+    <Rule Id="SA1304" Action="None" />
+    <!-- FieldNamesMustNotUseHungarianNotation -->
+    <Rule Id="SA1305" Action="None" />
+    <!-- FieldNamesMustBeginWithLowerCaseLetter -->
+    <Rule Id="SA1306" Action="None" />
+    <!-- AccessibleFieldsMustBeginWithUpperCaseLetter -->
+    <Rule Id="SA1307" Action="None" />
+    <!-- *1 VariableNamesMustNotBePrefixed -->
+    <Rule Id="SA1308" Action="Warning" />
+    <!-- FieldNamesMustNotBeginWithUnderscore -->
+    <Rule Id="SA1309" Action="None" />
+    <!-- FieldNamesMustNotContainUnderscore -->
+    <Rule Id="SA1310" Action="None" />
+    <!-- StaticReadonlyFieldsMustBeginWithUpperCaseLetter -->
+    <Rule Id="SA1311" Action="None" />
+    <!-- *1 VariableNamesMustBeginWithLowerCaseLetter -->
+    <Rule Id="SA1312" Action="Warning" />
+    <!-- *1 ParameterNamesMustBeginWithLowerCaseLetter -->
+    <Rule Id="SA1313" Action="Warning" />
+    <!-- *1 TypeParameterNamesMustBeginWithT -->
+    <Rule Id="SA1314" Action="Warning" />
+    
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/MaintainabilityRules.md -->
+    <!-- StatementMustNotUseUnnecessaryParenthesis -->
+    <Rule Id="SA1119" Action="None" />
+    <!-- AccessModifierMustBeDeclared -->
+    <Rule Id="SA1400" Action="None" />
+    <!-- *1 FieldsMustBePrivate -->
+    <Rule Id="SA1401" Action="Warning" />
+    <!-- FileMayOnlyContainASingleType -->
+    <Rule Id="SA1402" Action="None" />
+    <!-- FileMayOnlyContainASingleNamespace -->
+    <Rule Id="SA1403" Action="None" />
+    <!-- CodeAnalysisSuppressionMustHaveJustification -->
+    <Rule Id="SA1404" Action="None" />
+    <!-- DebugAssertMustProvideMessageText -->
+    <Rule Id="SA1405" Action="None" />
+    <!-- DebugFailMustProvideMessageText -->
+    <Rule Id="SA1406" Action="None" />
+    <!-- ArithmeticExpressionsMustDeclarePrecedence -->
+    <Rule Id="SA1407" Action="None" />
+    <!-- ConditionalExpressionsMustDeclarePrecedence -->
+    <Rule Id="SA1408" Action="None" />
+    <!-- RemoveUnnecessaryCode -->
+    <Rule Id="SA1409" Action="None" />
+    <!-- RemoveDelegateParenthesisWhenPossible -->
+    <Rule Id="SA1410" Action="None" />
+    <!-- AttributeConstructorMustNotUseUnnecessaryParenthesis -->
+    <Rule Id="SA1411" Action="None" />
+    <!-- StoreFilesAsUtf8 -->
+    <Rule Id="SA1412" Action="None" />
+    <!-- UseTrailingCommasInMultiLineInitializers -->
+    <Rule Id="SA1413" Action="None" />
+
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/LayoutRules.md -->
+    <!-- BracesForMultiLineStatementsMustNotShareLine -->
+    <Rule Id="SA1500" Action="None" />
+    <!-- StatementMustNotBeOnSingleLine -->
+    <Rule Id="SA1501" Action="None" />
+    <!-- ElementMustNotBeOnSingleLine -->
+    <Rule Id="SA1502" Action="None" />
+    <!-- BracesMustNotBeOmitted -->
+    <Rule Id="SA1503" Action="None" />
+    <!-- AllAccessorsMustBeSingleLineOrMultiLine -->
+    <Rule Id="SA1504" Action="None" />
+    <!-- OpeningBracesMustNotBeFollowedByBlankLine -->
+    <Rule Id="SA1505" Action="None" />
+    <!-- ElementDocumentationHeadersMustNotBeFollowedByBlankLine -->
+    <Rule Id="SA1506" Action="None" />
+    <!-- CodeMustNotContainMultipleBlankLinesInARow -->
+    <Rule Id="SA1507" Action="None" />
+    <!-- ClosingBracesMustNotBePrecededByBlankLine -->
+    <Rule Id="SA1508" Action="None" />
+    <!-- OpeningBracesMustNotBePrecededByBlankLine -->
+    <Rule Id="SA1509" Action="None" />
+    <!-- ChainedStatementBlocksMustNotBePrecededByBlankLine -->
+    <Rule Id="SA1510" Action="None" />
+    <!-- WhileDoFooterMustNotBePrecededByBlankLine -->
+    <Rule Id="SA1511" Action="None" />
+    <!-- SingleLineCommentsMustNotBeFollowedByBlankLine -->
+    <Rule Id="SA1512" Action="None" />
+    <!-- ClosingBraceMustBeFollowedByBlankLine -->
+    <Rule Id="SA1513" Action="None" />
+    <!-- ElementDocumentationHeaderMustBePrecededByBlankLine -->
+    <Rule Id="SA1514" Action="None" />
+    <!-- SingleLineCommentMustBePrecededByBlankLine -->
+    <Rule Id="SA1515" Action="None" />
+    <!-- ElementsMustBeSeparatedByBlankLine -->
+    <Rule Id="SA1516" Action="None" />
+    <!-- CodeMustNotContainBlankLinesAtStartOfFile -->
+    <Rule Id="SA1517" Action="None" />
+    <!-- UseLineEndingsCorrectlyAtEndOfFile -->
+    <Rule Id="SA1518" Action="None" />
+    <!-- BracesMustNotBeOmittedFromMultiLineChildStatement -->
+    <Rule Id="SA1519" Action="None" />
+    <!-- UseBracesConsistently -->
+    <Rule Id="SA1520" Action="None" />
+
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/DocumentationRules.md -->
+    <!-- *1 ElementsMustBeDocumented -->
+    <Rule Id="SA1600" Action="Warning" />
+    <!-- PartialElementsMustBeDocumented -->
+    <Rule Id="SA1601" Action="None" />
+    <!-- EnumerationItemsMustBeDocumented -->
+    <Rule Id="SA1602" Action="None" />
+    <!-- *1 DocumentationMustContainValidXml -->
+    <Rule Id="SA1603" Action="Warning" />
+    <!-- *1 ElementDocumentationMustHaveSummary -->
+    <Rule Id="SA1604" Action="Warning" />
+    <!-- PartialElementDocumentationMustHaveSummary -->
+    <Rule Id="SA1605" Action="None" />
+    <!-- *1 ElementDocumentationMustHaveSummaryText -->
+    <Rule Id="SA1606" Action="Warning" />
+    <!-- PartialElementDocumentationMustHaveSummaryText -->
+    <Rule Id="SA1607" Action="None" />
+    <!-- *1 ElementDocumentationMustNotHaveDefaultSummary -->
+    <Rule Id="SA1608" Action="Warning" />
+    <!-- PropertyDocumentationMustHaveValue -->
+    <Rule Id="SA1609" Action="None" />
+    <!-- PropertyDocumentationMustHaveValueText -->
+    <Rule Id="SA1610" Action="None" />
+    <!-- *1 ElementParametersMustBeDocumented -->
+    <Rule Id="SA1611" Action="Warning" />
+    <!-- *1 ElementParameterDocumentationMustMatchElementParameters -->
+    <Rule Id="SA1612" Action="Warning" />
+    <!-- *1 ElementParameterDocumentationMustDeclareParameterName -->
+    <Rule Id="SA1613" Action="Warning" />
+    <!-- *1 ElementParameterDocumentationMustHaveText -->
+    <Rule Id="SA1614" Action="Warning" />
+    <!-- *1 ElementReturnValueMustBeDocumented -->
+    <Rule Id="SA1615" Action="Warning" />
+    <!-- *1 ElementReturnValueDocumentationMustHaveText -->
+    <Rule Id="SA1616" Action="Warning" />
+    <!-- *1 VoidReturnValueMustNotBeDocumented -->
+    <Rule Id="SA1617" Action="Warning" />
+    <!-- *1 GenericTypeParametersMustBeDocumented -->
+    <Rule Id="SA1618" Action="Warning" />
+    <!-- GenericTypeParametersMustBeDocumentedPartialClass -->
+    <Rule Id="SA1619" Action="None" />
+    <!-- *1 GenericTypeParameterDocumentationMustMatchTypeParameters -->
+    <Rule Id="SA1620" Action="Warning" />
+    <!-- *1 GenericTypeParameterDocumentationMustDeclareParameterName -->
+    <Rule Id="SA1621" Action="Warning" />
+    <!-- *1 GenericTypeParameterDocumentationMustHaveText -->
+    <Rule Id="SA1622" Action="Warning" />
+    <!-- PropertySummaryDocumentationMustMatchAccessors -->
+    <Rule Id="SA1623" Action="None" />
+    <!-- PropertySummaryDocumentationMustOmitSetAccessorWithRestrictedAccess -->
+    <Rule Id="SA1624" Action="None" />
+    <!-- *1 ElementDocumentationMustNotBeCopiedAndPasted -->
+    <Rule Id="SA1625" Action="Warning" />
+    <!-- SingleLineCommentsMustNotUseDocumentationStyleSlashes -->
+    <Rule Id="SA1626" Action="None" />
+    <!-- *1 DocumentationTextMustNotBeEmpty -->
+    <Rule Id="SA1627" Action="Warning" />
+    <!-- DocumentationTextMustBeginWithACapitalLetter -->
+    <Rule Id="SA1628" Action="None" />
+    <!-- DocumentationTextMustEndWithAPeriod -->
+    <Rule Id="SA1629" Action="None" />
+    <!-- DocumentationTextMustContainWhitespace -->
+    <Rule Id="SA1630" Action="None" />
+    <!-- DocumentationMustMeetCharacterPercentage -->
+    <Rule Id="SA1631" Action="None" />
+    <!-- DocumentationTextMustMeetMinimumCharacterLength -->
+    <Rule Id="SA1632" Action="None" />
+    <!-- FileMustHaveHeader -->
+    <Rule Id="SA1633" Action="None" />
+    <!-- FileHeaderMustShowCopyright -->
+    <Rule Id="SA1634" Action="None" />
+    <!-- FileHeaderMustHaveCopyrightText -->
+    <Rule Id="SA1635" Action="None" />
+    <!-- FileHeaderCopyrightTextMustMatch -->
+    <Rule Id="SA1636" Action="None" />
+    <!-- FileHeaderMustContainFileName -->
+    <Rule Id="SA1637" Action="None" />
+    <!-- FileHeaderFileNameDocumentationMustMatchFileName -->
+    <Rule Id="SA1638" Action="None" />
+    <!-- FileHeaderMustHaveSummary -->
+    <Rule Id="SA1639" Action="None" />
+    <!-- FileHeaderMustHaveValidCompanyText -->
+    <Rule Id="SA1640" Action="None" />
+    <!-- FileHeaderCompanyNameTextMustMatch -->
+    <Rule Id="SA1641" Action="None" />
+    <!-- ConstructorSummaryDocumentationMustBeginWithStandardText -->
+    <Rule Id="SA1642" Action="None" />
+    <!-- DestructorSummaryDocumentationMustBeginWithStandardText -->
+    <Rule Id="SA1643" Action="None" />
+    <!-- DocumentationHeadersMustNotContainBlankLines -->
+    <Rule Id="SA1644" Action="None" />
+    <!-- IncludedDocumentationFileDoesNotExist -->
+    <Rule Id="SA1645" Action="None" />
+    <!-- IncludedDocumentationXPathDoesNotExist -->
+    <Rule Id="SA1646" Action="None" />
+    <!-- IncludeNodeDoesNotContainValidFileAndPath -->
+    <Rule Id="SA1647" Action="None" />
+    <!-- InheritDocMustBeUsedWithInheritingClass -->
+    <Rule Id="SA1648" Action="None" />
+    <!-- FileNameMustMatchTypeName -->
+    <Rule Id="SA1649" Action="None" />
+    <!-- ElementDocumentationMustBeSpelledCorrectly -->
+    <Rule Id="SA1650" Action="None" />
+    <!-- DoNotUsePlaceholderElements -->
+    <Rule Id="SA1651" Action="None" />
+    <!-- EnableXmlDocumentationOutput -->
+    <Rule Id="SA1652" Action="None" />
+    
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/AlternativeRules.md -->
+    <!-- DoNotPrefixLocalMembersWithThis -->
+    <Rule Id="SX1101" Action="None" />
+    <!-- FieldNamesMustBeginWithUnderscore -->
+    <Rule Id="SX1309" Action="None" />
+    <!-- StaticFieldNamesMustBeginWithUnderscore -->
+    <Rule Id="SX1309S" Action="None" />
+  </Rules>
+</RuleSet>

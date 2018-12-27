@@ -1,0 +1,17 @@
+﻿
+
+@if (Session["Rank"] != null)
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink($@"Hello! {Session["Name"].ToString()} 您好~ ", "Index", "Account")
+        </li>
+        <<li>@Html.ActionLink("登出", "Logout", "Account")</li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("登入", "Logon", "Account")</li>
+    </ul>
+}

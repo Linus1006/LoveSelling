@@ -1,0 +1,17 @@
+﻿@model IEnumerable<LoveSelling.Models.Product>
+@using GridMvc.Html
+
+<div>
+    @Html.Grid(Model).Columns(columns =>
+{
+    columns.Add(m => m.ID).Titled("產品編號").Sortable(true);
+    columns.Add(m => m.Unit).Titled("單位").Sortable(true);
+    columns.Add(m => m.Item).Titled("品項");
+    columns.Add(m => m.Staff).Titled("提供同仁員編").Sortable(true);
+    columns.Add(m => m.Amount).Titled("金額").Sortable(true);
+    columns.Add(m => m.isSell).Titled("賣出");
+    columns.Add().Encoded(false).Sanitized(false).RenderValueAs(m => Ajax.ActionLink("Edit", "LoadProduct", new { id = m.ID }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "LoadSaveProduct", HttpMethod = "Post", OnSuccess = "showProductModal" }));
+    columns.Add().Encoded(false).Sanitized(false).RenderValueAs(m => Html.ActionLink("Delete", "DeleteProduct", new { id = m.ID }, new { onclick = "return confirm('確定刪除此物品!!??');" }));
+}).WithPaging(18)
+</div>
+

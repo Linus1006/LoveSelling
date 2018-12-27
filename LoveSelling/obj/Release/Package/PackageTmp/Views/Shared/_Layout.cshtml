@@ -1,0 +1,69 @@
+﻿@using LoveSelling.Models;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@DateTime.Now.Year 玉山愛心義賣</title>
+    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon" />
+    <link rel="Bookmark" href="~/img/favicon.ico" type="image/x-icon" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/Gridmvc.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("愛心義賣", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*新增及調整新的活動連結*@
+                    @if (Session["Rank"] != null)
+                    {
+                        if (Convert.ToInt32(Session["Rank"]) >= (int)AccountRank.Maintainer)
+                        {
+                            <li>@Html.ActionLink("商品後台", "Maintain", "BuyProduct")</li>
+                            //拍賣後台管理放這於此
+
+                        }
+                        if (Convert.ToInt32(Session["Rank"]) >= (int)AccountRank.User)
+                        {
+                            <li>@Html.ActionLink("購買頁面", "Index", "BuyProduct")</li>
+                            //拍賣網頁選單可放著於此
+
+                        }
+
+                        @*<li>@Html.ActionLink("競標頁面", "Index", "Bidding")</li>*@
+                    }
+                    <li>@Html.ActionLink("展示頁面", "ShowTotal", "BuyProduct")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p style="position:fixed; bottom:0px; width:100%; background-color:#FFFFFF">&copy; @DateTime.Now.Year - 資訊處 應用發展部贊助開發</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    @*mvc.grid 使用*@
+    <script src="~/Scripts/gridmvc.min.js"></script>
+    @*datatablejs 使用*@
+</body>
+</html>

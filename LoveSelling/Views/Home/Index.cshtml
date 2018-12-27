@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "2017愛心義賣活動頁";
+}
+
+<style>
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    div {
+        text-align: center;
+    }
+</style>
+
+@*<img src="~/img/25-01_heart1122.jpg" style="display:block; margin:auto;" />*@
+@*<img src="~/img/25-01_heart1122.jpg" width="1250" height="833" style="display:block; margin:auto;"></a>*@
+
+<div id="container" align="center">
+    <a href="~/Account/Logon"> <img src="~/img/25-01_heart1122.jpg" id="full_screen" alt="前往參與活動"/></a>
+</div>
+
+<div class="nav navbar-nav navbar-right">
+    @* @Html.ActionLink("前往參與活動", "Logon", "Account", new { returnUrl = @"/Home/Index" }, new { @class = "btn btn-primary" })*@
+    @Html.ActionLink("前往參與活動", "Logon", "Account", null, new { returnUrl = @"/Home/Index" })
+</div>
+<br />
+
+@*<p class="nav navbar-nav navbar-right">
+        <a href="Account/Index" class="btn btn-info" role="button">前往參與活動</a>
+    </p>*@

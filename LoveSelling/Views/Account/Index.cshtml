@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "使用者登錄資訊";
+}
+
+<h2>@ViewBag.Title</h2>
+<div>
+    現在線上人數為:@ViewBag.LogonNumber
+</div>
+
+@if (@ViewBag.message != null)
+{
+    <div>
+        現在登陸資訊為:@ViewBag.message
+    </div>
+    if (ViewBag.employeeID != null) {
+    <div>
+        員工姓名:@ViewBag.name
+    </div>
+    <div>
+        員工編號:@ViewBag.employeeID
+    </div>
+    <div>
+        權限等級:@ViewBag.Rank
+    </div>
+    }
+}
+else
+{
+    <div>
+        未登錄，無使用者資訊
+    </div>
+}

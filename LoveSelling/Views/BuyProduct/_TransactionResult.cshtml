@@ -1,0 +1,50 @@
+﻿@using LoveSelling.ViewModels;
+@model  LoveSelling.ViewModels.SellResult
+<script src="~/Scripts/countUp.js"></script>
+<script>
+    $(function () {
+
+        // ------------------ 以下是 countUp.js
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+            prefix: '',
+            suffix: ''
+        };
+        var demo = new CountUp("myTargetElement",0, @Model.TotalAmount, 0, 3, options);
+        demo.start();
+
+        var numAnim = new CountUp("myTargetElement", 1, 0);
+        numAnim.start();
+        // ------------------ 以上是 countUp.js
+
+    });
+
+</script>
+
+<div class="bubble">
+
+    @if (Model.Product == null)
+    {
+        <h2>很抱歉</h2>
+        <h2>查無此商品</h2>
+    }
+    else
+    {
+        if (Model.Product.isSell.Value)
+        {
+            <h2>很抱歉</h2>
+            <h2>本商品已售出囉</h2>
+        }
+        else
+        {
+            <h2>謝謝您的愛心</h2>
+            <h2>本次消費<span>@Model.Product.Amount</span>元</h2>
+        }
+    }
+    <h2>義賣共已募得<span id="myTargetElement"></span>元</h2>
+</div>
+
+

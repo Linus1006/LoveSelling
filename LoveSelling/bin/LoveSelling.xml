@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LoveSelling</name>
+    </assembly>
+    <members>
+        <member name="T:LoveSelling.Controllers.AccountController">
+            <summary>
+            登錄相關頁面
+            </summary>
+        </member>
+        <member name="M:LoveSelling.Controllers.AccountController.Index">
+            <summary>
+            帳號資訊首頁(DeBug用)
+            </summary>
+            <returns>回傳帳號登陸頁面</returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.AccountController.Logon(System.String)">
+            <summary>
+            登陸頁面
+            </summary>
+            <param name="returnUrl"></param>
+            <returns>登錄輸入頁面</returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.AccountController.Logout">
+            <summary>
+            登出
+            </summary>
+            <returns>登出後轉導回登錄頁</returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.AccountController.Logon(LoveSelling.Models.Account,System.String)">
+            <summary>
+            進行登錄
+            </summary>
+            <param name="account"></param>
+            <param name="returnUr">回去的網址</param>
+            <returns></returns>
+        </member>
+        <member name="T:LoveSelling.Controllers.BuyProductController">
+            <summary>
+            購買頁面的controller
+            </summary>
+        </member>
+        <member name="M:LoveSelling.Controllers.BuyProductController.Index">
+            <summary>
+            銷售系統首頁
+            </summary>
+            <returns>回傳頁面</returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.BuyProductController.ShowTotal(System.Nullable{LoveSelling.Models.Place})">
+            <summary>
+            展示賣出總金額
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.BuyProductController.Transaction(System.String)">
+            <summary>
+            交易進行
+            </summary>
+            <param name="id"></param>
+            <returns>回傳頁面</returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.BuyProductController.Maintain">
+            <summary>
+            後台管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.BuyProductController.FindProducts(System.String)">
+            <summary>
+            查詢產品
+            </summary>
+            <param name="keyword">關鍵字</param>
+            <returns>回傳查詢商品的列表</returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.BuyProductController.LoadProduct(System.String)">
+            <summary>
+            查詢單筆資料資訊
+            </summary>
+            <param name="id"></param>
+            <returns>回傳修改頁面</returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.BuyProductController.GetUnitItems">
+            <summary>
+            取得單位DropDownList的資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Controllers.HomeController.Index">
+            <summary>
+            活動首頁
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.MvcApplication.Application_Start">
+            <summary>
+            Application開始做的事情
+            </summary>
+        </member>
+        <member name="M:LoveSelling.MvcApplication.Session_Start(System.Object,System.EventArgs)">
+            <summary>
+            每個Session開始
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LoveSelling.MvcApplication.Session_End(System.Object,System.EventArgs)">
+            <summary>
+            每個Session結束
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:LoveSelling.Models.Account">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LoveSelling.Models.Account.ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoveSelling.Models.LoveAuthorizeFilter.OnAuthorization(System.Web.Mvc.AuthorizationContext)">
+            <summary>
+            授權
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="M:LoveSelling.CollectionExtensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>取得某項目的值或是預設值</summary>
+            <typeparam name="TKey">IDictionary的Key類型</typeparam>
+            <typeparam name="TValue">IDictionary的Value類型</typeparam>
+            <param name="dict">字典</param>
+            <param name="key">鍵值</param>
+            <param name="defaultValue">若抓不到鍵值時所回傳的預設值</param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.CollectionExtensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">
+            <summary>取值或是設定</summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dict"></param>
+            <param name="key"></param>
+            <param name="valueGetter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.CollectionExtensions.SetEntries``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})">
+            <summary>設定Dictionary的多個項目</summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dict"></param>
+            <param name="entries"></param>
+        </member>
+        <member name="M:LoveSelling.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>在集合的每個元素上執行某個動作</summary>
+            <typeparam name="T"></typeparam>
+            <param name="collections"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:LoveSelling.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})">
+            <summary>在集合的每個元素上執行某個動作</summary>
+            <typeparam name="T"></typeparam>
+            <param name="collections"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:LoveSelling.Service.AccountHelper.GetLogonNumber">
+            <summary>
+            取的資料庫登錄人數(已改用Application level)
+            </summary>
+            <returns>人數</returns>
+        </member>
+        <member name="M:LoveSelling.Service.AccountHelper.Logon(LoveSelling.Models.Account)">
+            <summary>
+            登錄作業(含資料庫更新)
+            </summary>
+            <param name="account">準備登錄的資料</param>
+            <returns>帳號資訊</returns>
+        </member>
+        <member name="M:LoveSelling.Service.AccountHelper.updateLogonInfo(LoveSelling.Models.Account)">
+            <summary>
+            更新登陸紀錄
+            </summary>
+            <param name="account"></param>
+            <returns>更新資料數量</returns>
+        </member>
+        <member name="M:LoveSelling.Service.AccountHelper.Logout(System.String)">
+            <summary>
+            更新登陸紀錄(登出)
+            </summary>
+            <param name="employeeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Service.ProductHelper.Load(System.String)">
+            <summary>
+            讀取商品資料
+            </summary>
+            <param name="id">產品編號</param>
+            <returns>產品清單的List</returns>
+        </member>
+        <member name="M:LoveSelling.Service.ProductHelper.Find(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="keyword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Service.ProductHelper.AddProduct(LoveSelling.Models.Product,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Service.ProductHelper.UpdateProduct(LoveSelling.Models.Product,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Service.ProductHelper.DeleteProduct(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Service.ProductHelper.Transaction(LoveSelling.Models.Product,System.String)">
+            <summary>
+            進行交易
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveSelling.Service.ProductHelper.GetTotalAmount(System.Nullable{LoveSelling.Models.Place})">
+            <summary>
+            獲得特定地點販賣的總金額
+            </summary>
+            <param name="place">地點 Place</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

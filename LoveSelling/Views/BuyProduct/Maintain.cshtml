@@ -1,0 +1,66 @@
+﻿@model IEnumerable<LoveSelling.Models.Product>
+@{
+    ViewBag.Title = "Maintain";
+}
+
+<script>
+
+    function findProducts() {
+        $("#divPlaceHolder").load('@Url.Action("FindProducts")', { keyword: $("#keyword").val() });
+    };
+
+    function showProductModal() {
+        $("#saveProductModal").modal("show");
+
+    };
+
+    function hideProductModal() {
+        $("#saveProductModal").modal("hide");
+    };
+
+    function updatePage() {
+        //$("#saveProductModal").modal("hide");
+        //hideProductModal();
+        showProductModal();
+        findProducts();
+    }
+
+</script>
+
+<style>
+    .table {
+        position: relative;
+        top: 10px;
+    }
+</style>
+
+<h3>@DateTime.Now.Year 愛心義賣維護頁面</h3>
+
+@*<form action=@Url.Action((string)ViewBag.action) method="Post">*@
+@*@using (Html.BeginForm((string)ViewBag.Action, "BuyProduct", FormMethod.Post))*@
+@using (Ajax.BeginForm("UpdateProduct", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "LoadSaveProduct", HttpMethod = "Post", OnBegin = "hideProductModal", OnSuccess = "updatePage" }))
+{
+    @*新增產品編輯區塊*@
+    <div id="LoadSaveProduct"></div>
+}
+
+@*搜尋*@
+@using (Ajax.BeginForm("FindProducts", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "divPlaceHolder", HttpMethod = "Post" }))
+{
+    @*查詢欄位設定*@
+    <div>
+        <button style="float:right" type="submit" class="btn btn-default" name="BtnQuery">查詢</button>
+        <input style="float:right" class="form-control" type="text" id="keyword" name="keyword" value=@ViewBag.keyword placeholder="查詢條件:產品編號/品項/員編/單位" />
+    </div>
+}
+
+@*跳出新增畫面*@
+ @Ajax.ActionLink("新增", "LoadProduct",null, new AjaxOptions { InsertionMode = InsertionMode.Replace
+                                                           , UpdateTargetId = "LoadSaveProduct"
+                                                           , HttpMethod = "Post"
+                                                           , OnSuccess = "showProductModal" }, new { @class = "btn btn-primary" })
+
+@*列表資料設定*@
+<div id="divPlaceHolder">
+    @Html.Partial("_FindProducts", Model)
+</div>

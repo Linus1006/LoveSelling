@@ -1,0 +1,103 @@
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\csc.exe
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\System.Collections.Immutable.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\vbc.exe
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\VBCSCompiler.exe
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\roslyn\VBCSCompiler.exe.config
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\LoveSelling.dll.config
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\LoveSelling.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\LoveSelling.pdb
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Microsoft.Web.Infrastructure.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Helpers.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Mvc.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Razor.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Webpages.Deployment.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Webpages.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Webpages.Razor.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Razor.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Webpages.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Webpages.Deployment.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Webpages.Razor.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Helpers.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Mvc.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Razor.resources.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Webpages.resources.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Webpages.Deployment.resources.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Webpages.Razor.resources.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Helpers.resources.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Mvc.resources.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\obj\Release\LoveSelling.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\obj\Release\LoveSelling.pdb
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Dapper.dll
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Dapper.xml
+c:\users\esb11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\obj\Release\LoveSelling.csprojResolveAssemblyReference.cache
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Antlr3.Runtime.dll
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Newtonsoft.Json.dll
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Optimization.dll
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Optimization.Extensions.dll
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\WebGrease.dll
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Antlr3.Runtime.pdb
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\Newtonsoft.Json.xml
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Optimization.xml
+C:\Users\ESB11964\documents\visual studio 2015\Projects\LoveSelling\LoveSelling\bin\System.Web.Optimization.Extensions.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\csc.exe
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\System.Collections.Immutable.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\vbc.exe
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\VBCSCompiler.exe
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\roslyn\VBCSCompiler.exe.config
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\LoveSelling.dll.config
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\LoveSelling.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\LoveSelling.pdb
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Antlr3.Runtime.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Dapper.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Microsoft.Web.Infrastructure.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Newtonsoft.Json.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Helpers.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Mvc.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Optimization.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Optimization.Extensions.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Razor.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Webpages.Deployment.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Webpages.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Webpages.Razor.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\WebGrease.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Antlr3.Runtime.pdb
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Dapper.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\Newtonsoft.Json.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Optimization.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Optimization.Extensions.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Razor.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Webpages.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Webpages.Deployment.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Webpages.Razor.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Helpers.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\System.Web.Mvc.xml
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Razor.resources.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Webpages.resources.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Webpages.Deployment.resources.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Webpages.Razor.resources.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Helpers.resources.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\zh-Hant\System.Web.Mvc.resources.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\obj\Release\LoveSelling.csprojResolveAssemblyReference.cache
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\obj\Release\LoveSelling.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\obj\Release\LoveSelling.pdb
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\GridMvc.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\bin\WebActivatorEx.dll
+D:\TFSProjects\C150-Personal\YBT柏廷\LoveSelling\LoveSelling\obj\Release\LoveSelling.csproj.CoreCompileInputs.cache

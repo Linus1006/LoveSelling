@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{D2C3C586-1FD3-4425-A057-904BFD341079}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoveSelling/Web.config">
+    <Files>
+      <File FileName="LoveSelling/Web.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LoveSelling PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
